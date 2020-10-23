@@ -14,7 +14,7 @@ fetch("https://cat-fact.herokuapp.com/facts")
     return response.json();
   })
   .then((data) => {
-    data.all.slice(0, 12).forEach((facts) => {
+    data.all.slice(0, 9).forEach((facts) => {
       const card = document.createElement("div");
       card.setAttribute("class", "card");
 
